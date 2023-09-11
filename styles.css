@@ -61,6 +61,38 @@ h1 {
         inset -10px -10px 70px rgba(255, 226, 201, 0.8); /* Bottom left shadow */
 }
 
+/* Style skills section */
+#content-skills h2 {
+    font-size: 24px; /* Adjust the font size as needed */
+    color: #333; /* Adjust the text color as needed */
+    text-align: center; /* Center the title horizontally */
+    margin-bottom: 20px; /* Add spacing below the title */
+}
+
+
+#content-skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+#content-skills li {
+    text-align: center;
+    margin: 10px; 
+}
+
+#content-skills img.skills-Logo {
+    width: 80px; 
+    height: 80px;
+}
+
+#content-skills p {
+    margin-top: 5px; 
+    font-size: 16px; 
+}
+
 
 
 
