@@ -7,10 +7,11 @@ body {
 
 /* Style the Menu bar */
 .topnav {
-    position: fixed;
+    position: absolute;
     top: 20px;
     right: 20px;
     background-color: transparent;
+    z-index: 2;
 }
 
 .navbar-link {
@@ -24,6 +25,7 @@ body {
     position: absolute;
     top: 30vh; 
     left: 80px;
+    z-index: 1;
 }
 
 h1 {
@@ -38,28 +40,26 @@ h1 {
     border-top: 2px solid #595858;
 }
 
-/* Style the content */
-.content {
+/* Style the content-container and image*/
+.content-container {
+    padding: 60px;
+    position: relative;
     margin-top: 220px; 
-    padding: 60px; 
 }
 
 .profile img {
-    position: absolute;
-    top: 20vh;
-    left: 45%;
+    float: right;
     transform: rotate(-5deg); 
     max-height: calc(100vh - 220px);
     margin-right: 20px;
+    margin-top: -30px;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     box-shadow:
         inset 10px 10px 70px rgba(255, 226, 201, 0.8), /* Top right shadow */
         inset -10px 10px 70px rgba(255, 226, 201, 0.8), /* Top left shadow */
         inset 10px -10px 70px rgba(255, 226, 201, 0.8), /* Bottom right shadow */
         inset -10px -10px 70px rgba(255, 226, 201, 0.8); /* Bottom left shadow */
-        inset 0 0 10px rgba(255, 255, 255, 0.8); /* Add a bit of white color */
 }
-
 
 
 
