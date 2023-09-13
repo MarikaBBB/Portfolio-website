@@ -5,7 +5,6 @@ const learning = document.getElementById('learning')
 function toggleContent(contentId) {
     // Hide all content sections
     contents.forEach(function (content) {
-        console.log(contents)
         
         content.style.display = 'none';
     });
