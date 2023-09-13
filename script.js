@@ -23,17 +23,8 @@ links.forEach((link) => {
     });
 });
 
-// Function to scroll to the project section and toggle project card visibility
-function scrollToProjects() {
-    // Scroll to the project section with a smooth animation
-    //learning.scrollIntoView({ behavior: 'smooth', block: 'start' });
-}
-
-// Add event listener to the "Click Here" button
-document.getElementById('clickBtn').addEventListener('click', scrollToProjects);
-
 // Function to toggle project card visibility
-function toggleProjectCards() {
+function toggleScrollProjectCards() {
     // Toggle the visibility of project cards
     learning.classList.toggle('show-projects');
     learning.classList.toggle('hidden');
@@ -42,7 +33,7 @@ function toggleProjectCards() {
 
 // Add event listener to the "Click Here" button for toggling project cards
 document.getElementById('clickBtn').addEventListener('click', () => {
-    toggleProjectCards(); // Toggle project card visibility after scrolling
+    toggleScrollProjectCards(); // Toggle project card visibility after scrolling
 });
 
 // Initial content to display

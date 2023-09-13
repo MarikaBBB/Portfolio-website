@@ -42,6 +42,7 @@ body {
     border: none;
     border-top: 2px solid #595858;
   }
+
   
   /* Style the content-container and image*/
   .section {
@@ -133,11 +134,12 @@ body {
 
 
 /* Styles for the project card container */
-#learning .projectCards {
+.projectCards {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   padding: 10px 0;
+  margin-top: 300px;
 }
 
 .hidden {
@@ -145,6 +147,7 @@ body {
 }
 
 #learning .container {
+  flex: 1 1 500px;
   margin: 10px;
   margin-left: 40px;
   padding-top: 5px;
@@ -236,9 +239,9 @@ body {
 /* Style Contact section */
 
 
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
   #learning .container {
       max-width: 100%;
   }
-}
+} */
 
