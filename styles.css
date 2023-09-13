@@ -2,98 +2,243 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #FFE2C9;
-}
-
-/* Style the Menu bar */
-.topnav {
+    background-color: #ffe2c9;
+  }
+  
+  /* Style the Menu bar */
+  .menuTop {
     position: absolute;
     top: 20px;
     right: 20px;
     background-color: transparent;
     z-index: 2;
-}
-
-.navbar-link {
+  }
+  
+  .navbar {
     text-decoration: none;
     color: black;
     margin: 10px;
-}
-
-/* Style the heading */
-.heading-wrapper {
+  }
+  
+  /* Style the heading */
+  .heading {
     position: absolute;
     top: 30vh; 
     left: 80px;
     z-index: 1;
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start;
 }
 
-h1 {
+  h1 {
     font-size: 2.5rem;
     margin: 0;
-}
-
-.separator {
+  }
+  
+  .separator {
     width: 100%;
-    margin: 10px auto;
+    margin: 10px 0;
     border: none;
     border-top: 2px solid #595858;
-}
-
-/* Style the content-container and image*/
-.content-container {
+  }
+  
+  /* Style the content-container and image*/
+  .section {
     padding: 60px;
     position: relative;
-    margin-top: 220px; 
-}
-
-.profile img {
+    margin-top: 220px;
+  }
+  
+  .photo img {
     float: right;
-    transform: rotate(-5deg); 
+    transform: rotate(-5deg);
     max-height: calc(100vh - 220px);
     margin-right: 20px;
     margin-top: -30px;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-    box-shadow:
-        inset 10px 10px 70px rgba(255, 226, 201, 0.8), /* Top right shadow */
-        inset -10px 10px 70px rgba(255, 226, 201, 0.8), /* Top left shadow */
-        inset 10px -10px 70px rgba(255, 226, 201, 0.8), /* Bottom right shadow */
-        inset -10px -10px 70px rgba(255, 226, 201, 0.8); /* Bottom left shadow */
-}
-
-/* Style skills section */
-#content-skills h2 {
-    font-size: 24px; /* Adjust the font size as needed */
-    color: #333; /* Adjust the text color as needed */
-    text-align: center; /* Center the title horizontally */
-    margin-bottom: 20px; /* Add spacing below the title */
-}
-
-
-#content-skills ul {
+    box-shadow: 
+      inset 10px 10px 70px rgba(255, 226, 201, 0.8), 
+      inset -10px 10px 70px rgba(255, 226, 201, 0.8), 
+      inset 10px -10px 70px rgba(255, 226, 201, 0.8),
+      inset -10px -10px 70px rgba(255, 226, 201, 0.8); 
+  }
+  
+  /* Common style for all content sections */
+  .content {
+    padding-left: 20px;
+  }
+  
+  .content h2 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 10px auto;
+  }
+  
+  .content img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Style skills section */
+  #skills ul {
     list-style: none;
     padding: 0;
     display: flex;
-    flex-wrap: wrap; 
-    justify-content: center; 
-}
-
-#content-skills li {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  #skills li {
     text-align: center;
-    margin: 10px; 
-}
-
-#content-skills img.skills-Logo {
-    width: 80px; 
+    margin: 10px;
+  }
+  
+  #skills img.logo {
+    width: 80px;
     height: 80px;
+    margin-right: 10px;
+  }
+  
+  .centeredContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Style Projects section */
+  .centeredContent p {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .centeredContent .scroll-button {
+    margin-top: 10px;
+  }
+  
+  .centeredContent .handEmoji {
+    margin-top: 10px;
+    font-size: 48px;
+  }
+
+
+/* Styles for the project card container */
+#learning .projectCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 10px 0;
 }
 
-#content-skills p {
-    margin-top: 5px; 
-    font-size: 16px; 
+.hidden {
+  display: none;
 }
 
+#learning .container {
+  margin: 10px;
+  margin-left: 40px;
+  padding-top: 5px;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  margin-left: 40px;
+  padding-top: 5px;
+}
+
+/*
+#learning .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  margin: 10px;
+  margin-left: 40px;
+  padding-top: 5px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 10px 20px rgba(37, 41, 52, 0.1);
+  border-radius: 20px; 
+  overflow: hidden;
+  transition: box-shadow 0.3s ease-in-out;
+  margin: 10px;
+  margin-left: 40px;
+  padding-top: 5px;
+  display: flex;
+  align-items: center;
+} 
+
+#learning .container:hover {
+  box-shadow: 0 15px 30px rgba(37, 41, 52, 0.2);
+} */
+
+#learning .container .picture {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%; /* Circular image */
+}
+
+#learning .container .information {
+  flex: 1;
+  text-align: left;
+  padding: 20px; 
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#learning .container h3 {
+  font-size: 1.8rem;
+  margin: 0;
+  color: #f300b4;
+}
+
+#learning .container p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+#learning .container .onTheWeb {
+  margin-top: 20px;
+}
+
+#learning .container .onTheWeb a {
+  text-decoration: none;
+  color: #f300b4;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: color 0.3s ease-in-out;
+}
+
+#learning /*.container*/ .onTheWeb a:hover {
+  color: #252934;
+}
+
+.onTheWeb {
+  margin-top: 10px;
+}
+
+.container.show-projects {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Style Contact section */
 
 
-
+@media only screen and (max-width: 768px) {
+  #learning .container {
+      max-width: 100%;
+  }
+}
 

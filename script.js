@@ -1,7 +1,12 @@
+const contents = document.querySelectorAll('.content')
+const learning = document.getElementById('learning')
+
 // Function to toggle content based on menu clicks
 function toggleContent(contentId) {
     // Hide all content sections
-    document.querySelectorAll('.content').forEach(function(content) {
+    contents.forEach(function (content) {
+        console.log(contents)
+        
         content.style.display = 'none';
     });
 
@@ -10,21 +15,41 @@ function toggleContent(contentId) {
 }
 
 // Add event listeners for menu clicks
-document.getElementById('about-link').addEventListener('click', function() {
-    toggleContent('content-about');
+const links = Array.from(document.getElementsByClassName('navbar'));
+
+links.forEach((link) => {
+    link.addEventListener('click', function () {
+        toggleContent(link.dataset.link);
+    });
 });
 
-document.getElementById('skills-link').addEventListener('click', function() {
-    toggleContent('content-skills');
+// Function to scroll to the project section and toggle project card visibility
+function scrollToProjects() {
+    // Scroll to the project section with a smooth animation
+    //learning.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+// Add event listener to the "Click Here" button
+document.getElementById('clickBtn').addEventListener('click', scrollToProjects);
+
+// Function to toggle project card visibility
+function toggleProjectCards() {
+    // Toggle the visibility of project cards
+    learning.classList.toggle('show-projects');
+    learning.classList.toggle('hidden');
+    learning.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+// Add event listener to the "Click Here" button for toggling project cards
+document.getElementById('clickBtn').addEventListener('click', () => {
+    toggleProjectCards(); // Toggle project card visibility after scrolling
 });
 
-document.getElementById('projects-link').addEventListener('click', function() {
-    toggleContent('content-projects');
-});
+// Initial content to display
+toggleContent('statement');
 
-document.getElementById('contact-link').addEventListener('click', function() {
-    toggleContent('content-contact');
-});
 
-// Initial content to display (About Me)
-toggleContent('content-about');
+
+
+
+
