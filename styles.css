@@ -1,155 +1,184 @@
 /* Reset default styles for the body */
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #ffe2c9;
-  }
-  
-  /* Style the Menu bar */
-  .menuTop {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background-color: transparent;
-    z-index: 2;
-  }
-  
-  .navbar {
-    text-decoration: none;
-    color: black;
-    margin: 10px;
-  }
-  
-  /* Style the heading */
-  .heading {
-    position: absolute;
-    top: 30vh; 
-    left: 80px;
-    z-index: 1;
-    display: flex; 
-    flex-direction: column; 
-    align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  background-color: #ffe2c9;
 }
 
-  h1 {
-    font-size: 2.5rem;
-    margin: 0;
-  }
-  
-  .separator {
-    width: 100%;
-    margin: 10px 0;
-    border: none;
-    border-top: 2px solid #595858;
-  }
+/* Style the Menu bar */
+.menuTop {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  z-index: 2;
+}
 
-  
-  /* Style the content-container and image*/
-  .section {
-    padding: 60px;
-    position: relative;
-    margin-top: 220px;
-  }
-  
-  .photo img {
-    float: right;
-    transform: rotate(-5deg);
-    max-height: calc(100vh - 220px);
-    margin-right: 20px;
-    margin-top: -30px;
-    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-    box-shadow: 
-      inset 10px 10px 70px rgba(255, 226, 201, 0.8), 
-      inset -10px 10px 70px rgba(255, 226, 201, 0.8), 
-      inset 10px -10px 70px rgba(255, 226, 201, 0.8),
-      inset -10px -10px 70px rgba(255, 226, 201, 0.8); 
-  }
-  
-  /* Common style for all content sections */
-  .content {
-    padding-left: 20px;
-  }
-  
-  .content h2 {
-    font-size: 24px;
-    color: #333;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .content p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 10px auto;
-  }
-  
-  .content img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  /* Style skills section */
-  #skills ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  #skills li {
-    text-align: center;
-    margin: 10px;
-  }
-  
-  #skills img.logo {
-    width: 80px;
-    height: 80px;
-    margin-right: 10px;
-  }
-  
-  .centeredContent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
-  }
+.navbar {
+  text-decoration: none;
+  color: black;
+  margin: 10px;
+}
+
+/* Style the heading */
+.heading {
+  position: absolute;
+  top: 30vh;
+  left: 80px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.separator {
+  width: 100%;
+  margin: 10px 0;
+  border: none;
+  border-top: 2px solid #595858;
+}
+
+/* Style the content-container and image */
+.section {
+  padding: 60px;
+  position: relative;
+  margin-top: 220px;
+}
+
+/* Maintain a consistent top margin for all sections */
+.content {
+  padding-left: 20px;
+  margin-top: 20px; 
+  margin-right: 20px;
+}
+
+.photo img {
+  float: right;
+  transform: rotate(-5deg);
+  max-height: calc(100vh - 220px);
+  margin-right: 20px;
+  margin-top: -30px;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  box-shadow:
+    inset 10px 10px 70px rgba(255, 226, 201, 0.8),
+    inset -10px 10px 70px rgba(255, 226, 201, 0.8),
+    inset 10px -10px 70px rgba(255, 226, 201, 0.8),
+    inset -10px -10px 70px rgba(255, 226, 201, 0.8);
+}
+
+/* Common style for all content sections */
+.content {
+  padding-left: 20px;
+}
+
+.content h2 {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 10px auto;
+}
+
+.content img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style about and skills section */
+#about {
+  margin-right: 600px;
+}
+
+/* Style skills section */
+#skills {
+  margin-right: 400px;
+  margin-left: -60px;
+}
+
+#skillsTitle {
+  font-size: 24[x];
+}
+
+#skills ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+#skills li {
+  text-align: center;
+  margin: 10px;
+}
+
+#skills img.logo {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+.centeredContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.centeredContent #clickBtn {
+  margin-top: 60px;
+}
 
 /* Style project button */
 #clickBtn {
   text-decoration: none;
   background-color: transparent;
-  color: #f300b4; 
+  color: #f300b4;
   font-weight: bold;
   font-size: 1.2rem;
-  padding: 1rem 2rem; 
+  padding: 1rem 2rem;
   border: 1px solid #252934;
   border-radius: 5px;
 }
 
 #clickBtn:hover {
-  background-color: #f300b4;  
-  color: #50535e; 
+  background-color: #f300b4;
+  color: #50535e;
 }
 
-  
-  /* Style Projects section */
-  .centeredContent p {
-    font-size: 18px; /* from 24px to 18px */
-    margin: 0;
-  }
-  
-  .centeredContent .scroll-button {
-    margin-top: 10px;
-  }
-  
-  .centeredContent .handEmoji {
-    margin-top: 10px;
-    font-size: 48px;
-  }
+/* Style Projects section */
+#projects {
+  margin-top: -50px;
+  margin-left: 50px;
+  margin-right: 400px;
+}
 
+.centeredContent p {
+  font-size: 18px; 
+  margin: 0;
+}
+
+.centeredContent .scroll-button {
+  margin-top: 10px;
+}
+
+.centeredContent .handEmoji {
+  margin-top: 10px;
+  font-size: 48px;
+}
 
 /* Styles for the project card container */
 .projectCards {
@@ -179,8 +208,8 @@ body {
 
 .container .picture {
   width: 200px;
-  height: 150px; 
-  border-radius: 20px; 
+  height: 150px;
+  border-radius: 20px;
   overflow: hidden;
 }
 
@@ -190,11 +219,10 @@ body {
   object-fit: contain;
 }
 
-
 #learning .container .information {
   flex: 1;
   text-align: left;
-  padding: 20px; 
+  padding: 20px;
   padding-top: 10px;
   display: flex;
   flex-direction: column;
@@ -205,30 +233,30 @@ body {
   font-size: 1.8rem;
   margin: 0;
   color: #f300b4;
-  -webkit-text-stroke: 1px #f300b4; 
+  -webkit-text-stroke: 1px #f300b4;
   text-stroke: 1px #333;
 }
 
 #learning .container p {
   font-size: 1.2rem;
   margin: 10px 0;
-  text-align: justify; 
+  text-align: justify;
 }
 
 #learning .container .onTheWeb {
   margin-top: 20px;
-  display: flex;  
+  display: flex;
 }
 
 #learning .container .onTheWeb a {
   text-decoration: none;
-  color: #f300b4;  
+  color: #f300b4;
   font-weight: bold;
   font-size: 1.2rem;
   transition: color 0.3s ease-in-out;
-  padding: 0.5rem 2rem; 
-  border: 1px solid #252934; 
-  border-radius: 5px; 
+  padding: 0.5rem 2rem;
+  border: 1px solid #252934;
+  border-radius: 5px;
 }
 
 #learning .container .onTheWeb a:hover {
@@ -236,7 +264,7 @@ body {
 }
 
 #learning .container .onTheWeb a + a {
-  margin-left: 10px; 
+  margin-left: 10px;
 }
 
 .container.show-projects {
@@ -246,8 +274,13 @@ body {
 }
 
 /* Style Contact section */
+#contact {
+  margin-top: -80px;
+}
+
 .smallText {
-  font-size: 14px; 
+  font-size: 18px;
+  font-weight: normal;
 }
 
 input, textarea {
@@ -258,8 +291,8 @@ input, textarea {
   height: 30%;
   transition: 200ms;
   padding-bottom: 0.5rem;
+  margin-left: 20px;
 }
-
 
 input[type="text"],
 input[type="email"],
@@ -274,7 +307,6 @@ textarea {
   outline: none;
 }
 
-
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="text"]:not(output):focus,
@@ -283,9 +315,8 @@ textarea:focus {
   border-bottom: 2px solid #f300b4;
 }
 
-
 /* Style for the submit button container */
-.buttonContainer{
+.buttonContainer {
   margin-top: 2.5rem;
 }
 
@@ -333,13 +364,27 @@ input[type="submit"]:focus {
 }
 
 /* Style the icon images */
+.centeredContent h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-left: -100px;
+}
+
+#followTitle {
+  margin-left: -150px;
+}
+
+#titleForm {
+  font-weight: bold;
+}
+
 .socialIcons {
   list-style: none;
   padding: 0;
-  margin: 0;
-  display: flex; 
-  justify-content: space-between; 
-  width: 40%; 
+  margin: -10px 0 0;
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
 }
 
 .socialIcons li {
@@ -347,9 +392,14 @@ input[type="submit"]:focus {
 }
 
 .socialIcons img.icon {
-  width: 30px; 
-  height: auto; 
-  margin-right: 10px; 
-  margin-top: 20px;
-  margin-bottom: 20px;
+  width: 30px;
+  height: auto;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 40px;
+  transition: transform 0.2s, color 0.2s; 
+}
+
+.socialIcons img.icon:hover {
+  transform: scale(1.1);
 }
