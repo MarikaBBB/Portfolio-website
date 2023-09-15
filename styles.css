@@ -246,6 +246,10 @@ body {
 }
 
 /* Style Contact section */
+.smallText {
+  font-size: 14px; 
+}
+
 input, textarea {
   border: none;
   padding: 2rem;
@@ -323,6 +327,29 @@ input[type="submit"]:focus {
   margin-top: 20px;
   margin-left: 20px;
   margin-bottom: 20px;
+  font-size: 18px;
   opacity: 1;
   pointer-events: all;
+}
+
+/* Style the icon images */
+.socialIcons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; 
+  justify-content: space-between; 
+  width: 40%; 
+}
+
+.socialIcons li {
+  margin: 0; /* Remove any default margins */
+}
+
+.socialIcons img.icon {
+  width: 30px; 
+  height: auto; 
+  margin-right: 10px; 
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
