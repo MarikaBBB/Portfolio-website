@@ -137,7 +137,7 @@ body {
   
   /* Style Projects section */
   .centeredContent p {
-    font-size: 24px;
+    font-size: 18px; /* from 24px to 18px */
     margin: 0;
   }
   
@@ -246,35 +246,6 @@ body {
 }
 
 /* Style Contact section */
-.contact-container {
-  width: 40%;
-  float: right;
-  margin-top: 50px;
-}
-
-#contact {
-  color: #252934;
-  min-height: 100vh;
-  z-index: 1;
-}
-
-#contact-form {
-  margin-top: 1rem;
-  width: 50%;
-}
-
-/* Arrange form elements vertically */
-.contact-form-wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
-/* Add spacing between the form and the button */
-.contact-form-wrapper form {
-  margin-bottom: 1rem;
-}
-
-/* Style for input and textarea */
 input, textarea {
   border: none;
   padding: 2rem;
@@ -310,11 +281,10 @@ textarea:focus {
 
 
 /* Style for the submit button container */
-.button-container {
+.buttonContainer{
   margin-top: 2.5rem;
 }
 
-/* Style for the submit button */
 input[type="submit"] {
   text-decoration: none;
   background-color: transparent;
@@ -339,3 +309,20 @@ input[type="submit"]:focus {
   color: #50535e;
 }
 
+.message {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s;
+  margin-top: 0.5rem;
+}
+
+.message.visible {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  opacity: 1;
+  pointer-events: all;
+}

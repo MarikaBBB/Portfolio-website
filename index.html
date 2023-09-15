@@ -83,16 +83,20 @@
                 </div> 
             </div>
             <div class="content" id="contact" style="display: none;">
-                <p>contact form - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <form action="/contact" method="post">
+                <div class="centeredContent">
+                    <h2>Want to contact me?</h2>
+                    <p>Please, use the form below.</p>
+                </div>
+                <form class="feedbackForm" id="contactForm" method="post">
                     <input type="text" name="name" placeholder="Your name">
-                    <input type="email" name="email" placeholder="Your email">
+                    <input type="email" name="email" id="emailInput" placeholder="Your email">
                     <input type="text" name="subject" placeholder="Subject">
                     <textarea name="message" placeholder="Your message"></textarea>
-                    <div class="button-container">
+                    <div class="buttonContainer">
                         <input type="submit" value="Send">
-                      </div>
-                  </form>
+                    </div>
+                    <p id="thankyouMessage" class="message">Thank you! I'll be in touch.</p>
+                </form>
             </div>
          </div> 
     </main>  

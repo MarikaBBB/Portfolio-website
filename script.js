@@ -1,5 +1,10 @@
-const contents = document.querySelectorAll('.content')
-const learning = document.getElementById('learning')
+const contents = document.querySelectorAll('.content');
+const learning = document.getElementById('learning');
+
+const contactForm = document.getElementById("contactForm");
+const thankyouMessage = document.getElementById("thankyouMessage");
+
+
 
 // Function to toggle content based on menu clicks
 function toggleContent(contentId) {
@@ -40,6 +45,51 @@ toggleContent('statement');
 
 
 
+// Function to show/hide 'thank you message'
+function showThankyouMessage() {
+    thankyouMessage.classList.add("visible");
+}
 
+function hideThankyouMessage() {
+    thankyouMessage.classList.remove("visible");
+}
+
+// Contact form
+function registerEmail(event) {
+    event.preventDefault();
+
+    const name = contactForm.querySelector('input[name="name"]').value;
+    const email = contactForm.querySelector('input[name="email"]').value;
+    const subject = contactForm.querySelector('input[name="subject"]').value;
+    const message = contactForm.querySelector('textarea[name="message"]').value;
+
+    fetch("https://formspree.io/f/xaygovyn", {
+        method: "POST",
+        headers: {
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+            name,
+            email,
+            subject,
+            message,
+        }),
+    })
+        .then((response) => {
+            if (response.ok) {
+                contactForm.reset();
+                showThankyouMessage();
+                setTimeout(hideThankyouMessage, 3000);
+            } else {
+                console.error("Failed to send email.");
+            }
+        })
+        .catch((error) => {
+            console.error("Error:", error);
+        });
+}
+
+contactForm.addEventListener("submit", registerEmail);
 
 
