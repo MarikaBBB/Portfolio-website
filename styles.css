@@ -3,6 +3,15 @@ body {
   margin: 0;
   padding: 0;
   background-color: #ffe2c9;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Finger Paint', cursive;
+}
+
+#socialMedia {
+  font-family: 'Finger Paint', cursive;
 }
 
 /* Style the Menu bar */
@@ -18,7 +27,7 @@ body {
   text-decoration: none;
   color: #333333;
   margin: 10px;
-  font-size: 1.1rem;
+  font-size: 1.1rem; /* consider 1rem*/
 }
 
 /* Style the heading */
@@ -85,7 +94,7 @@ h1 {
 }
 
 .content p {
-  font-size: 1.1rem;
+  font-size: 1.1rem; /* consider 1rem*/
   line-height: 1.5;
   margin: 10px auto;
   color: #333333;
@@ -359,18 +368,16 @@ input[type="submit"]:focus {
 }
 
 /* Style the icon images */
-.centeredContent h2 {
-  font-size: 1.5rem;
-  font-weight: normal;
-  margin-left: -100px;
-}
-
 #followTitle {
-  margin-left: -150px;
+  margin-left: -200px;
+  font-weight: lighter;
+  font-size: 1.1rem;
 }
 
 #titleForm {
   font-weight: bold;
+  font-size: 1.1rem;
+  margin-left: -105px;
 }
 
 .socialIcons {
