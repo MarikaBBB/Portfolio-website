@@ -30,6 +30,38 @@ h1, h2, h3 {
   font-size: 1.1rem; /* consider 1rem*/
 }
 
+.navbar span {
+  position: relative;
+  display: inline-block;
+}
+
+.navbar span::before,
+.navbar span::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #572938; /* Separator color */
+  bottom: -3px; 
+  transition: width 0.3s ease; 
+  transform: scaleX(0); /* Initially hide the separators */
+  transform-origin: center top;
+}
+
+.navbar span::before {
+  left: 0;
+}
+
+.navbar span::after {
+  right: 0;
+}
+
+.navbar:hover span::before,
+.navbar:hover span::after {
+  width: 100%; /* Separators appear on hover */
+  transform: scaleX(1); 
+}
+
 /* Style the heading */
 .heading {
   position: absolute;
