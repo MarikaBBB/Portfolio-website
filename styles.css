@@ -112,7 +112,6 @@ h1 { font-size: 2.8rem; margin: 0; }
 
 .content img {
   max-width: 100%;
-  /*height: auto;*/
   overflow: hidden;
 }
 
@@ -149,7 +148,7 @@ section.projectSection#projects {
   flex-wrap: wrap;
   margin-top: 60px;
   width: 100%;
-  justify-content: start; 
+  justify-content: center; 
   background-color: #fff0e6;
 }
 
@@ -157,6 +156,9 @@ section.projectSection#projects {
   width: calc(50% - 20px);
   height: auto;
   flex: 0 0 calc(50% - 20px);
+  display: flex;
+  justify-content: center; /* horizontally center */
+  align-items: center; 
 }
 
 .picture {
@@ -166,19 +168,7 @@ section.projectSection#projects {
   height: 250px;
   object-fit: scale-down;
   background-color: white;
-  /*overflow: hidden;*/
   margin-bottom: 10px;
-}
-
-
-#imgBackground { background-color: black; }
-.projectContent {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin: 0 auto;
-  padding: 20px;
 }
 
 #projects .container .information {
