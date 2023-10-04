@@ -1,11 +1,33 @@
 /*
 =================================================
+GLOBAL CSS VARIABLES
+=================================================
+*/
+:root {
+  /* Colors */
+  --bg-color: #ffe2c9;
+  --text-color: #333333;
+  --accent-color: #572938;
+  --secondary-bg-color: #fff0e6;
+  --placeholder-color: #808080;
+
+  /* Fonts */
+  --main-font: 'Raleway', sans-serif;
+  --alt-font: 'Finger Paint', cursive;
+
+  /* Other reusable values */
+  --base-font-size: 1.1rem;
+  --base-transition: 0.3s;
+}
+
+/*
+=================================================
 GLOBAL STYLES
 =================================================
 */
 html, body {
-  background-color: #ffe2c9;
-  font-family: 'Raleway', sans-serif;
+  background-color: var(--bg-color);
+    font-family: var(--main-font);
 }
 
 /*
@@ -34,8 +56,8 @@ NAVIGATION STYLING
 
 .navbar a {
   text-decoration: none;
-  color: #333333;
-  font-size: 1.1rem;
+  color: var(--text-color);
+  font-size: var(--base-font-size);
   position: relative;
   display: inline-block; 
 }
@@ -46,7 +68,7 @@ NAVIGATION STYLING
   position: absolute;
   width: 0;
   height: 2px;
-  background-color: #572938;
+  background-color: var(--accent-color);
   bottom: -3px;
   transition: width 0.3s ease;
   transform-origin: center top;
@@ -80,7 +102,7 @@ CONTENT STYLES
 }
 
 h1, h2, #socialMedia {
-  font-family: 'Finger Paint', cursive;
+  font-family: var(--alt-font)
 }
 
 h1 {
@@ -128,16 +150,16 @@ SPECIFIC CONTENT STYLING
 */
 .content h2 {
   font-size: 1.5rem;
-  color: #333333;
+  color: var(--text-color);
   text-align: center;
   margin-bottom: 20px;
 }
 
 .content p {
-  font-size: 1.1rem;
+  font-size: var(--base-font-size);
   line-height: 1.5;
   margin: 10px auto;
-  color: #333333;
+  color: var(--text-color);
 }
 
 .content img {
@@ -206,7 +228,7 @@ PROJECTS STYLING
   margin-top: 60px;
   width: 100%;
   justify-content: space-between;
-  background-color: #fff0e6;
+  background-color: var(--secondary-bg-color);
   padding: 0 10px;
 }
 
@@ -249,7 +271,7 @@ PROJECTS STYLING
   font-size: 1.8rem;
   margin: 0;
   white-space: nowrap;
-  color: #572938;
+  color: var(--accent-color);
 }
 
 #projects .container .onTheWeb {
@@ -258,7 +280,7 @@ PROJECTS STYLING
 
 #projects .container .onTheWeb a {
   text-decoration: none;
-  color: #572938;
+  color: var(--accent-color);
   font-weight: bold;
   font-size: 1.2rem;
   transition: color 0.3s ease-in-out;
@@ -269,8 +291,8 @@ PROJECTS STYLING
 
 #projects .container .onTheWeb a:hover,
 #projects .container .onTheWeb a:focus {
-  background-color: #572938;
-  color: #fff0e6;
+  background-color: var(--accent-color);
+  color: var(--secondary-bg-color);
 }
 
 #projects .container .onTheWeb a + a {
@@ -287,7 +309,7 @@ CONTACT SECTION STYLING
 }
 
 .smallText {
-  font-size: 1.1rem;
+  font-size: var(--base-font-size);
   font-weight: normal;
 }
 
@@ -302,7 +324,7 @@ input, textarea {
   margin-left: 20px;
   border-bottom: 1px solid #333333;
   background: transparent;
-  color: #333333;
+  color: var(--text-color);
   font-size: 1.2rem;
   box-shadow: none;
   outline: none;
@@ -311,7 +333,7 @@ input, textarea {
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
-  border-bottom: 2px solid #572938;
+  border-bottom: 2px solid var(--accent-color);
 }
 
 .visually-hidden {
@@ -337,11 +359,11 @@ SUBMIT BUTTON STYLING
 input[type="submit"] {
   text-decoration: none;
   background-color: transparent;
-  color: #572938;
+  color: var(--accent-color);
   font-weight: bold;
   font-size: 1.2rem;
   padding: 1rem 2rem;
-  border: 1px solid #64313e;
+  border: 1px solid var(--accent-color);
   border-radius: 5px;
   width: 150px;
   transition: background-color 0.3s, color 0.3s;
@@ -350,12 +372,12 @@ input[type="submit"] {
 input[type="submit"]:hover,
 input[type="submit"]:focus {
   cursor: pointer;
-  background-color: #572938;
-  color: #ffe2c9;
+  background-color: var(--accent-color);
+  color: var(--bg-color);
 }
 
 ::placeholder {
-  color:  #808080;
+  color: var(--placeholder-color);
 }
 
 .message {
@@ -372,7 +394,7 @@ input[type="submit"]:focus {
   margin-top: 20px;
   margin-left: 20px;
   margin-bottom: 20px;
-  font-size: 1.1rem;
+  font-size: var(--base-font-size);
   opacity: 1;
   pointer-events: all;
 }
@@ -385,12 +407,12 @@ ICONS STYLING
 #followTitle {
   margin-left: -220px;
   font-weight: lighter;
-  font-size: 1.1rem;
+  font-size: var(--base-font-size);
 }
 
 h3#titleForm {
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: var(--base-font-size);
   margin-left: -105px;
 }
 

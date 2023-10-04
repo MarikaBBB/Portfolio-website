@@ -1,4 +1,18 @@
 /**
+ * Global functions
+ */
+function showThankyouMessage() {
+    const thankyouMessage = document.getElementById("thankyouMessage");
+    thankyouMessage.classList.add("visible");
+}
+
+function hideThankyouMessage() {
+    const thankyouMessage = document.getElementById("thankyouMessage");
+    thankyouMessage.classList.remove("visible");
+}
+
+
+/**
  * Initial Setup on DOM Loaded
  */
 document.addEventListener("DOMContentLoaded", function() {
@@ -9,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const mainPage = document.querySelector('.mainPage');
     const contents = document.querySelectorAll('.content');
     const contactForm = document.getElementById("contactForm");
-    const thankyouMessage = document.getElementById("thankyouMessage");
+    
 
     /**
      * Functions to manage content visibility
@@ -18,13 +32,6 @@ document.addEventListener("DOMContentLoaded", function() {
         contents.forEach(content => content.style.display = 'none');
     }
 
-    function showThankyouMessage() {
-        thankyouMessage.classList.add("visible");
-    }
-
-    function hideThankyouMessage() {
-        thankyouMessage.classList.remove("visible");
-    }
 
     /**
      * Navigation Links Handling
@@ -53,12 +60,10 @@ document.addEventListener("DOMContentLoaded", function() {
     hideAllContents();
     mainPage.style.display = 'block';
     document.getElementById('statement').style.display = 'block';
-});
 
 
-
-/**
- * Contact Form Handling
+    /**
+ * Contact Form Event listener
  */
 contactForm.addEventListener("submit", function(event) {
     event.preventDefault();
@@ -88,7 +93,8 @@ contactForm.addEventListener("submit", function(event) {
             alert("There was an issue sending your message. Please try again later.");
         }
     })
-    .catch(error => console.error("Error:", error));
+   .catch(error => console.error("Error:", error));
+});
 });
 
 
