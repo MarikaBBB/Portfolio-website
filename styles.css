@@ -265,6 +265,9 @@ PROJECTS STYLING
   text-align: center;
   padding: 20px;
   padding-top: 10px;
+  max-width: 90%; /* Restrict the width */
+  margin: 0 auto; /* Center it if it's smaller than max-width */
+
 }
 
 #projects .container h3 {
@@ -446,8 +449,116 @@ MEDIA QUERIES
 =================================================
 */
 @media only screen and (max-width: 768px) {
-  
+    
+  /* Navbar */
+  .navbar li {
+      margin: 5px;
+  }
+
+  .navbar a {
+      font-size: 0.9rem;
+  }
+
+  /* Centering content in mainPage */
+  .mainPage {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  /* Heading & Title */
+  .heading {
+      margin-top: -120px;
+      margin-bottom: 10px;
+  }
+
+  h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+  }
+
+  .separator {
+      width: 80%;  
+      margin: 0 auto;
+  }
+
+  /* Profile Photo Styling */
+  .photo img {
+      width: 80%; 
+      height: auto;
+      margin: 170px auto 0 auto;
+      display: block;
+      float: none;
+  }
+
+  /* Specific content styles */
+  #about {
+      margin-right: 0;
+  }
+
+  #skills img.logo {
+      width: 60px; 
+      height: 60px; 
+  }
+
+  .content {
+      padding-left: 10px; 
+      padding-right: 10px;
+      margin-top: -240px;
+  }
+
+  #skills {
+      margin-right: 0;
+      margin-left: 10px;
+  }
+
+  /* Projects styling */
+  #projects {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  #projects .container {
+      width: 80%;
+      margin-top: 50px;
+      margin-bottom: 40px;
+  }
+
+  #projects .container .information {
+      max-width: 100%;
+  }
+
+  #projects .container .onTheWeb {
+      margin-bottom: 60px;
+  }
+
+
+  /* Contact section styling */
+  #contact {
+    margin-top: -320px;
+   
+  }
+
+  input, textarea {
+      width: 80%;
+  }
+
+  /* Icons styling */
+  #followTitle {
+      margin-left: 0;
+  }
+
+  h3#titleForm {
+      margin-left: 0;
+  }
+
+  .socialIcons {
+      justify-content: center;
+      width: 60%;
+  }
 }
+
 
  
 

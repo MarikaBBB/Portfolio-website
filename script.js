@@ -247,7 +247,7 @@ const projectData = [
     {
         image: "./images/python.jpg",
         alt: "Python logo representing the Intro to Python project with CFG",
-        title: "Intro to Python (CFG)",
+        title: "Intro to Python",
         codeLink: "https://github.com/MarikaBBB/cfg-python-recipes-rearch-project"
     },
     {
@@ -260,7 +260,7 @@ const projectData = [
     {
         image: "./images/pokemon.png",
         alt: "Design of the Pokemon encyclopedia project",
-        title: "Pokemon encyclopedia",
+        title: "Pokédex",
         codeLink: "https://github.com/MarikaBBB/lift-portfolio/tree/main/pokemon",
         liveLink: "https://marikabbb.github.io/lift-portfolio/pokemon/index.html"
     },
