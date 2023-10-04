@@ -1,47 +1,61 @@
 /**
- * Grab DOM elements for navigation and content
- */
-const navLinks = document.querySelectorAll(".navbar");
-const mainPage = document.querySelector('.mainPage');
-const contents = document.querySelectorAll('.content');
-const contactForm = document.getElementById("contactForm");
-const thankyouMessage = document.getElementById("thankyouMessage");
-
-/**
- * Functions to manage content visibility
- */
-function hideAllContents() {
-    contents.forEach(content => content.style.display = 'none');
-}
-
-function showThankyouMessage() {
-    thankyouMessage.classList.add("visible");
-}
-
-function hideThankyouMessage() {
-    thankyouMessage.classList.remove("visible");
-}
-
-/**
- * Navigation Links Handling
+ * Initial Setup on DOM Loaded
  */
 document.addEventListener("DOMContentLoaded", function() {
+    
+    //Grab DOM elements for navigation and content
+    
+    const navLinks = document.querySelectorAll(".navbar a");
+    const mainPage = document.querySelector('.mainPage');
+    const contents = document.querySelectorAll('.content');
+    const contactForm = document.getElementById("contactForm");
+    const thankyouMessage = document.getElementById("thankyouMessage");
+
+    /**
+     * Functions to manage content visibility
+     */
+    function hideAllContents() {
+        contents.forEach(content => content.style.display = 'none');
+    }
+
+    function showThankyouMessage() {
+        thankyouMessage.classList.add("visible");
+    }
+
+    function hideThankyouMessage() {
+        thankyouMessage.classList.remove("visible");
+    }
+
+    /**
+     * Navigation Links Handling
+     */
     navLinks.forEach(link => {
         link.addEventListener("click", function(e) {
             e.preventDefault();
-
             const linkTarget = e.currentTarget.getAttribute("data-link");
-            mainPage.style.display = linkTarget === 'projects' ? 'none' : 'block';
-            hideAllContents();
-            document.getElementById(linkTarget).style.removeProperty('display');
+            
+            if (linkTarget === 'projects') {
+                mainPage.style.display = 'none';
+                hideAllContents();
+                document.getElementById(linkTarget).style.display = 'block';
+            } else {
+                mainPage.style.display = 'block';
+                document.getElementById('projects').style.display = 'none';
+                hideAllContents();
+                document.getElementById(linkTarget).style.display = 'block';
+            }
         });
     });
 
-    // Set initial state on page load
+    /**
+     * Set initial state on page load
+     */
     hideAllContents();
     mainPage.style.display = 'block';
     document.getElementById('statement').style.display = 'block';
 });
+
+
 
 /**
  * Contact Form Handling
@@ -77,19 +91,20 @@ contactForm.addEventListener("submit", function(event) {
     .catch(error => console.error("Error:", error));
 });
 
+
 /**
  * Skills Section Generation
  */
 document.addEventListener("DOMContentLoaded", function() {
     const skillsData = [
-        { src: './images/html-5.png', alt: 'Skills Logo', name: 'HTML' },
-        { src: './images/css-3.png', alt: 'Skills Logo', name: 'CSS' },
-        { src: './images/js.png', alt: 'Skills Logo', name:'JS'},
-        { src: './images/visual-studio.png', alt: 'Skills Logo', name:'VisualStudio'},
-        { src: './images/git.png', alt: 'Skills Logo', name:'GIT'},
-        { src: './images/code.png', alt: 'Skills Logo', name:'CODE'},
-        { src: './images/responsive.png', alt: 'Skills Logo', name:'MOBILE'},
-    ];
+        { src: './images/html-5.png', alt: 'HTML 5 logo', name: 'HTML' },
+        { src: './images/css-3.png', alt: 'CSS 3 logo', name: 'CSS' },
+        { src: './images/js.png', alt: 'JavaScript logo', name:'JS'},
+        { src: './images/visual-studio.png', alt: 'Visual Studio logo', name:'VisualStudio'},
+        { src: './images/git.png', alt: 'Git logo', name:'GIT'},
+        { src: './images/code.png', alt: 'GitHub logo', name:'GITHUB'},
+        { src: './images/responsive.png', alt: 'Mobile responsive design icon', name:'MOBILE'},
+    ];    
 
     // Get the UL element from the DOM to append skills
     const skillsList = document.getElementById('skillsList');
@@ -118,43 +133,44 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+
 /**
  * Social Media Links Handling
  */
-
 // Array of social media data
 const socialMediaLinks = [
     {
         url: "https://www.linkedin.com/in/marikabertelli/",
         imgSrc: "./images/Iconlinkedin.png",
-        altText: "LinkedIn"
+        altText: "Link to Marika's LinkedIn profile"
     },
     {
         url: "https://www.instagram.com/marikabert/",
         imgSrc: "./images/Iconinstagram.png",
-        altText: "Instagram"
+        altText: "Link to Marika's Instagram profile"
     },
     {
         url: "https://github.com/yourprofile",
         imgSrc: "./images/Icongithub2.png",
-        altText: "GitHub"
+        altText: "Link to Marika's GitHub repository"
     },
     {
         url: "https://www.codewars.com/users/MarrrB",
         imgSrc: "./images/IconWars.png",
-        altText: "Codewars"
+        altText: "Link to Marika's Codewars profile"
     },
     {
         url: "https://wanderthroughculture.wordpress.com",
         imgSrc: "./images/Iconwordpress.png",
-        altText: "WordPress Blog"
+        altText: "Link to Marika's WordPress Blog"
     },
     {
         url: "https://www.goodreads.com/user/show/30598533-marika",
         imgSrc: "./images/Icongoodreads.png",
-        altText: "Goodreads"
+        altText: "Link to Marika's Goodreads profile"
     }
 ];
+
 
 // Get the ul element
 const socialMediaList = document.getElementById("socialMedia");
@@ -176,74 +192,75 @@ for (const link of socialMediaLinks) {
     socialMediaList.appendChild(listItem);
 }
 
+
 /**
  * Projects Section Generation
  */
 const projectData = [
     {
         image: "./images/founders and coders img.png",
-        alt: "Founders",
+        alt: "Logo of Founders & Coders project",
         title: "Founders & Coders",
         codeLink: "https://github.com/MarikaBBB/website",
         liveLink: "https://marikabbb.github.io"
     },
     {
         image: "./images/game.jpeg",
-        alt: "puzzle",
+        alt: "Snapshot of Puzzle game interface",
         title: "Puzzle game",
         codeLink: "https://github.com/MarikaBBB/game",
         liveLink: "https://marikabbb.github.io/game/index.html"
     },
     {
         image: "./images/codewars.png",
-        alt: "codewars",
+        alt: "Logo of Codewars platform",
         title: "Codewars",
         liveLink: "https://www.codewars.com/users/MarrrB"
     },
     {
         image: "./images/color generator.png",
-        alt: "ColourPicker",
-        title: "Colour palette generator",
+        alt: "Screenshot of Colour palette generator tool",
+        title: "ColourPicker",
         codeLink: "https://github.com/MarikaBBB/colour-palette-picker",
         liveLink: "https://marikabbb.github.io/colour-palette-picker/"
     },
     {
         image: "./images/oneTech.png",
-        alt: "oneTech",
-        title: "Intro to coding course",
+        alt: "Screenshot of the Intro to coding course project named oneTech",
+        title: "Intro to coding",
         codeLink: "https://github.com/MarikaBBB/lift-portfolio",
         liveLink: "https://marikabbb.github.io/lift-portfolio/"
     },
     {
         image: "./images/MovieDatabase.jpeg",
-        alt: "MovieDatabase",
+        alt: "Snapshot of the Movie Database project interface",
         title: "Movie Database",
         codeLink: "https://github.com/MarikaBBB/movie-database",
         liveLink: "https://marikabbb.github.io/MovieData/index.html"
     },
     {
         image: "./images/python.jpg",
-        alt: "Phyton",
-        title: "Introduction to Python (CFG)",
+        alt: "Python logo representing the Intro to Python project with CFG",
+        title: "Intro to Python (CFG)",
         codeLink: "https://github.com/MarikaBBB/cfg-python-recipes-rearch-project"
     },
     {
         image: "./images/to-do-list.png",
-        alt: "to-do-list",
+        alt: "Image showcasing the interface of the To-do List project",
         title: "To-do List",
         codeLink: "https://github.com/MarikaBBB/lift-portfolio/tree/main/to-do-list",
         liveLink: "https://marikabbb.github.io/lift-portfolio/to-do-list/index.html"
     },
     {
         image: "./images/pokemon.png",
-        alt: "Pokemon",
+        alt: "Design of the Pokemon encyclopedia project",
         title: "Pokemon encyclopedia",
         codeLink: "https://github.com/MarikaBBB/lift-portfolio/tree/main/pokemon",
         liveLink: "https://marikabbb.github.io/lift-portfolio/pokemon/index.html"
     },
     {
         image: "./images/weather.png",
-        alt: "weather",
+        alt: "Interface of the Current weather project showing weather details",
         title: "Current weather",
         codeLink: "https://github.com/MarikaBBB/lift-portfolio/tree/main/weather",
         liveLink: "https://marikabbb.github.io/lift-portfolio/weather/index.html"
@@ -252,38 +269,28 @@ const projectData = [
 
 
 // Function to generate project elements and append them to the section
-const projectsSection = document.querySelector("#projects");
+const container = document.querySelectorAll(".container").item(document.querySelectorAll(".container").length - 1);
 
 for (const project of projectData) {
-    // Create container div
-    const container = document.createElement("div");
-    container.className = "container";
-
-    // Create projectContent div
     const projectContent = document.createElement("div");
     projectContent.className = "projectContent";
 
-    // Create and append image
     const image = document.createElement("img");
     image.src = project.image;
     image.alt = project.alt;
     image.className = "picture";
     projectContent.appendChild(image);
 
-    // Create and append information div
     const information = document.createElement("div");
     information.className = "information";
 
-    // Add project title
     const title = document.createElement("h3");
     title.textContent = project.title;
     information.appendChild(title);
 
-    // Add links div
     const onTheWeb = document.createElement("div");
     onTheWeb.className = "onTheWeb";
 
-    // Add code link if it exists
     if (project.codeLink) {
         const codeLink = document.createElement("a");
         codeLink.href = project.codeLink;
@@ -292,7 +299,6 @@ for (const project of projectData) {
         onTheWeb.appendChild(codeLink);
     }
 
-    // Add live link if it exists
     if (project.liveLink) {
         const liveLink = document.createElement("a");
         liveLink.href = project.liveLink;
@@ -304,5 +310,4 @@ for (const project of projectData) {
     information.appendChild(onTheWeb);
     projectContent.appendChild(information);
     container.appendChild(projectContent);
-    projectsSection.appendChild(container);
 }
