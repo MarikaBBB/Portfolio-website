@@ -1,20 +1,18 @@
-/* 
+/*
 =================================================
 GLOBAL STYLES
 =================================================
 */
-
 html, body {
   background-color: #ffe2c9;
   font-family: 'Raleway', sans-serif;
 }
 
-/* 
+/*
 =================================================
 NAVIGATION STYLING
 =================================================
 */
-
 .menuTop {
   position: absolute;
   top: 20px;
@@ -24,6 +22,7 @@ NAVIGATION STYLING
 }
 
 .navbar {
+  margin: 0;
   padding: 3px 0; 
 }
 
@@ -34,10 +33,11 @@ NAVIGATION STYLING
 }
 
 .navbar a {
+  text-decoration: none;
   color: #333333;
   font-size: 1.1rem;
   position: relative;
-  display: inline-block;
+  display: inline-block; 
 }
 
 .navbar a span::before,
@@ -53,26 +53,22 @@ NAVIGATION STYLING
   transform: scaleX(0);
 }
 
-.navbar a span::before { 
-  left: 0; 
-}
-
-.navbar a span::after { 
-  right: 0; 
-}
+.navbar a span::before { left: 0; }
+.navbar a span::after { right: 0; }
 
 .navbar a:hover span::before,
-.navbar a:hover span::after {
+.navbar a:hover span::after,
+.navbar a:focus span::before,
+.navbar a:focus span::after {
   width: 100%;
   transform: scaleX(1);
 }
 
-/* 
+/*
 =================================================
 CONTENT STYLES
 =================================================
 */
-
 .heading {
   position: absolute;
   top: 30vh;
@@ -95,6 +91,7 @@ h1 {
 .separator {
   width: 100%;
   margin: 10px 0;
+  border: none;
   border-top: 2px solid #333333;
 }
 
@@ -124,12 +121,11 @@ h1 {
       inset -10px -10px 70px rgba(255, 226, 201, 0.8);
 }
 
-/* 
+/*
 =================================================
 SPECIFIC CONTENT STYLING
 =================================================
 */
-
 .content h2 {
   font-size: 1.5rem;
   color: #333333;
@@ -146,6 +142,7 @@ SPECIFIC CONTENT STYLING
 
 .content img {
   max-width: 100%;
+  overflow: hidden;
 }
 
 #about {
@@ -198,12 +195,11 @@ SPECIFIC CONTENT STYLING
   display: block;
 }
 
-/* 
+/*
 =================================================
 PROJECTS STYLING
 =================================================
 */
-
 #projects {
   display: flex;
   flex-wrap: wrap;
@@ -215,17 +211,19 @@ PROJECTS STYLING
 }
 
 #projects h2 {
-  padding-top: 50px; 
+  padding-top: 50px;
 }
 
 #projects .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: calc(50% - 20px); 
+  width: calc(50% - 20px);
   padding: 10px;
+  box-sizing: border-box;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .picture {
@@ -250,6 +248,7 @@ PROJECTS STYLING
 #projects .container h3 {
   font-size: 1.8rem;
   margin: 0;
+  white-space: nowrap;
   color: #572938;
 }
 
@@ -258,25 +257,31 @@ PROJECTS STYLING
 }
 
 #projects .container .onTheWeb a {
+  text-decoration: none;
   color: #572938;
   font-weight: bold;
   font-size: 1.2rem;
   transition: color 0.3s ease-in-out;
   padding: 0.5rem 2rem;
+  border: 1px solid #572938;
   border-radius: 5px;
 }
 
-#projects .container .onTheWeb a:hover {
+#projects .container .onTheWeb a:hover,
+#projects .container .onTheWeb a:focus {
   background-color: #572938;
   color: #fff0e6;
 }
 
-/* 
+#projects .container .onTheWeb a + a {
+  margin-left: 10px;
+}
+
+/*
 =================================================
 CONTACT SECTION STYLING
 =================================================
 */
-
 #contact {
   margin-top: -80px;
 }
@@ -287,17 +292,66 @@ CONTACT SECTION STYLING
 }
 
 input, textarea {
+  border: none;
+  padding: 2rem;
   font-family: "Overlock", Arial, Helvetica, sans-serif;
   width: 40%;
+  height: 30%;
   transition: 200ms;
   padding-bottom: 0.5rem;
   margin-left: 20px;
+  border-bottom: 1px solid #333333;
+  background: transparent;
+  color: #333333;
+  font-size: 1.2rem;
+  box-shadow: none;
+  outline: none;
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
   border-bottom: 2px solid #572938;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important; 
+  width: 1px !important; 
+  overflow: hidden;
+}
+
+
+/*
+=================================================
+SUBMIT BUTTON STYLING
+=================================================
+*/
+.buttonContainer {
+  margin-top: 2.5rem;
+}
+
+input[type="submit"] {
+  text-decoration: none;
+  background-color: transparent;
+  color: #572938;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  border: 1px solid #64313e;
+  border-radius: 5px;
+  width: 150px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  cursor: pointer;
+  background-color: #572938;
+  color: #ffe2c9;
 }
 
 ::placeholder {
@@ -323,12 +377,11 @@ textarea:focus {
   pointer-events: all;
 }
 
-/* 
+/*
 =================================================
 ICONS STYLING
 =================================================
 */
-
 #followTitle {
   margin-left: -220px;
   font-weight: lighter;
@@ -359,9 +412,11 @@ h3#titleForm {
   transition: transform 0.2s, color 0.2s; 
 }
 
-.socialIcons img.icon:hover {
+.socialIcons img.icon:hover,
+.socialIcons img.icon:focus {
   transform: scale(1.1);
 }
+
 
 /*
 =================================================
@@ -371,6 +426,12 @@ MEDIA QUERIES
 @media only screen and (max-width: 768px) {
   
 }
+
+ 
+
+
+ 
+
 
  
 
