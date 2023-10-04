@@ -1,0 +1,74 @@
+/* 
+=================================================
+RESET STYLES
+=================================================
+*/
+
+/* Resetting margin, padding, and border-box */
+html, body, h1, h2, ul, li, a, input, textarea {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+/* Set consistent default font */
+html, body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 100%;
+    color: #333;
+}
+
+/* Remove underlines from links */
+a {
+    text-decoration: none;
+}
+
+/* Standardize list styles */
+ul {
+    list-style-type: none;
+}
+
+/* Remove border from certain elements */
+.separator {
+    border: none;
+}
+
+/* Reset image styles */
+img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+
+/* Ensure a consistent display property for certain elements */
+.menuTop, .navbar li, .navbar a, .heading, .content {
+    display: block;
+}
+
+/* Reset form element styles */
+input, textarea {
+    border: none;
+    background: transparent;
+    color: #333;
+    font-size: 1.2rem;
+    box-shadow: none;
+    outline: none;
+    transition: none;
+}
+
+::placeholder {
+    color:  #808080;
+}
+
+/* Additional resets */
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important; 
+    width: 1px !important; 
+    overflow: hidden;
+}
