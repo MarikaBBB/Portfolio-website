@@ -445,7 +445,7 @@ h3#titleForm {
 
 /*
 =================================================
-MEDIA QUERIES
+MEDIA QUERIES FOR MOBILE PHONES
 =================================================
 */
 @media only screen and (max-width: 768px) {
@@ -559,6 +559,124 @@ MEDIA QUERIES
   }
 }
 
+/*
+=================================================
+MEDIA QUERIES FOR TABLETS (INCLUDING IPAD)
+=================================================
+*/
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    
+  /* Navbar */
+  .navbar li {
+      margin: 10px;
+  }
+
+  .navbar a {
+      font-size: 1.1rem;
+  }
+
+  /* Centering content in mainPage */
+  .mainPage {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  /* Heading & Title */
+  .heading {
+      margin-top: -100px;
+      margin-bottom: 15px;
+  }
+
+  h1 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+  }
+
+  .separator {
+      width: 85%;
+      margin: 0 auto;
+  }
+
+  /* Profile Photo Styling */
+  .photo img {
+      width: 85%;
+      margin: 150px auto 0 auto;
+      margin-bottom: 50px;
+  }
+
+  /* Specific content styles */
+  #about {
+      margin-right: 10px;
+  }
+
+  #skills img.logo {
+      width: 70px;
+      height: 70px;
+  }
+
+  .content {
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+
+  #skills {
+      margin-right: 10px;
+      margin-left: 20px;
+  }
+
+  /* Projects styling */
+  #projects {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  #projects .container {
+      width: 85%;
+      margin-top: 40px;
+      margin-bottom: 30px;
+  }
+
+  #projects .container .information {
+      max-width: 90%;
+  }
+
+  #projects .container .onTheWeb {
+      margin-bottom: 50px;
+  }
+
+  /* Contact section styling */
+  #contact {
+    margin-top: 580px;
+  }
+
+  input, textarea {
+      width: 85%;
+  }
+
+  /* Icons styling */
+  #followTitle {
+      margin-left: 10px;
+  } 
+
+  h3#titleForm {
+      margin-left: 10px;
+  }
+
+  .socialIcons {
+      justify-content: center;
+      width: 65%;
+  }
+
+  .centeredContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horizontally centers the content */
+    width: 100%; /* full width of its parent container */
+    text-align: center; /* Centers text within child elements */
+}
+}
 
  
 

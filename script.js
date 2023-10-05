@@ -146,7 +146,7 @@ document.addEventListener("DOMContentLoaded", function() {
 // Array of social media data
 const socialMediaLinks = [
     {
-        url: "https://www.linkedin.com/in/marikabertelli/",
+        url: "https://www.linkedin.com/in/marika-bert/",
         imgSrc: "./images/Iconlinkedin.png",
         altText: "Link to Marika's LinkedIn profile"
     },
