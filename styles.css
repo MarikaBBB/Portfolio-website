@@ -459,14 +459,6 @@ MEDIA QUERIES FOR MOBILE PHONES
       font-size: 0.9rem;
   }
 
-  /* Centering content in mainPage */
-  .mainPage {
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-  }
-
   /* Heading & Title */
   .heading {
       margin-top: -120px;
@@ -559,12 +551,13 @@ MEDIA QUERIES FOR MOBILE PHONES
   }
 }
 
+
 /*
 =================================================
 MEDIA QUERIES FOR TABLETS (INCLUDING IPAD)
 =================================================
 */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 1180px) {
     
   /* Navbar */
   .navbar li {
@@ -575,18 +568,10 @@ MEDIA QUERIES FOR TABLETS (INCLUDING IPAD)
       font-size: 1.1rem;
   }
 
-  /* Centering content in mainPage */
-  .mainPage {
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-  }
-
   /* Heading & Title */
   .heading {
-      margin-top: -100px;
-      margin-bottom: 15px;
+      margin-top: -250px;
+      margin-bottom: 45px;
   }
 
   h1 {
@@ -601,12 +586,16 @@ MEDIA QUERIES FOR TABLETS (INCLUDING IPAD)
 
   /* Profile Photo Styling */
   .photo img {
-      width: 85%;
-      margin: 150px auto 0 auto;
+      width: 40%;
+      margin: 15px 0 50px auto;
       margin-bottom: 50px;
   }
 
   /* Specific content styles */
+  .section {
+    text-align: left;
+  }
+
   #about {
       margin-right: 10px;
   }
@@ -647,10 +636,6 @@ MEDIA QUERIES FOR TABLETS (INCLUDING IPAD)
   }
 
   /* Contact section styling */
-  #contact {
-    margin-top: 580px;
-  }
-
   input, textarea {
       width: 85%;
   }
@@ -669,14 +654,16 @@ MEDIA QUERIES FOR TABLETS (INCLUDING IPAD)
       width: 65%;
   }
 
+  
   .centeredContent {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Horizontally centers the content */
-    width: 100%; /* full width of its parent container */
-    text-align: center; /* Centers text within child elements */
+    align-items: center;  /*Horizontally centers the content */
+    width: 50%; /*full width of its parent container */
+    text-align: center; /*Centers text within child elements */
+} 
 }
-}
+
 
  
 
