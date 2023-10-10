@@ -1,0 +1,266 @@
+/*
+=================================================
+MEDIA QUERIES FOR MOBILE PHONES
+=================================================
+*/
+@media only screen and (max-width: 768px) {
+    /* Hamburger Menu Styles */
+    .mobile-menu {
+        display: block;
+    }
+  
+    #nav-menu {
+        display: none;
+    }
+  
+    /* Navbar */
+    .navbar li {
+        margin: 5px;
+    }
+  
+    .navbar a {
+        font-size: 0.9rem;
+    }
+  
+    /* Heading & Title */
+    .heading {
+        margin-top: -120px;
+        margin-bottom: 10px;
+    }
+  
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+  
+    .separator {
+        width: 80%;  
+        margin: 0 auto;
+    }
+  
+    /* Profile Photo Styling */
+    .photo img {
+        width: 80%; 
+        height: auto;
+        margin: 170px auto 0 auto;
+        display: block;
+        float: none;
+    }
+  
+    /* Specific content styles */
+    #about {
+        margin-right: 0;
+    }
+  
+    #skills img.logo {
+        width: 60px; 
+        height: 60px; 
+    }
+  
+    .content {
+        padding-left: 10px; 
+        padding-right: 10px;
+        margin-top: -240px;
+    }
+  
+    #skills {
+        margin-right: 0;
+        margin-left: 10px;
+    }
+  
+    /* Projects styling */
+    #projects {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    #projects .container {
+        width: 80%;
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+  
+    #projects .container .information {
+        max-width: 100%;
+    }
+  
+    #projects .container .onTheWeb {
+        margin-bottom: 60px;
+    }
+  
+  
+    /* Contact section styling */
+    #contact {
+      margin-top: -320px;
+     
+    }
+  
+    input, textarea {
+        width: 80%;
+    }
+  
+    /* Icons styling */
+    #followTitle {
+        margin-left: 0;
+    }
+  
+    h3#titleForm {
+        margin-left: 0;
+    }
+  
+    .socialIcons {
+        justify-content: center;
+        width: 60%;
+    }
+  }
+  
+  
+  /*
+  =================================================
+  MEDIA QUERIES FOR TABLETS (INCLUDING IPAD)
+  =================================================
+  */
+  @media only screen and (min-width: 769px) and (max-width: 1180px) {
+      
+    /* Navbar */
+    .navbar li {
+        margin: 10px;
+    }
+  
+    .navbar a {
+        font-size: 1.1rem;
+    }
+  
+    /* Heading & Title */
+    .heading {
+        margin-top: -150px;
+        margin-bottom: 45px;
+    }
+  
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+  
+    .separator {
+        width: 85%;
+        margin: 0 auto;
+    }
+  
+    /* Profile Photo Styling */
+    .photo img {
+        width: 40%;
+        margin: 15px 20px 50px auto;
+        margin-bottom: 50px;
+    }
+  
+    /* Specific content styles */
+    .section {
+      text-align: left;
+    }
+  
+    #about {
+        margin-right: 10px;
+    }
+  
+    #skills img.logo {
+        width: 70px;
+        height: 70px;
+    }
+  
+    .content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+  
+    #skills {
+        margin-right: 10px;
+        margin-left: 20px;
+    }
+  
+    /* Projects styling */
+    #projects {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    #projects .container {
+        width: 85%;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+  
+    #projects .container .information {
+        max-width: 90%;
+    }
+  
+    #projects .container .onTheWeb {
+        margin-bottom: 50px;
+    }
+  
+    /* Contact section styling */
+    input, textarea {
+        width: 85%;
+    }
+  
+    /* Icons styling */
+    #followTitle {
+        margin-left: 10px;
+    } 
+  
+    h3#titleForm {
+        margin-left: 10px;
+    }
+  
+    .socialIcons {
+        justify-content: center;
+        width: 65%;
+    }
+  
+    
+    .centeredContent {
+      display: flex;
+      flex-direction: column;
+      align-items: center;  /*Horizontally centers the content */
+      width: 50%; /*full width of its parent container */
+      text-align: center; /*Centers text within child elements */
+  } 
+  }
+  
+  /* 
+  =================================================
+  MEDIA QUERIES FOR MOBILE LANDSCAPES
+  =================================================
+  */
+  @media only screen and (max-width: 768px) and (orientation: landscape) {
+  
+    /* Hamburger Menu Visibility */
+    .mobile-menu {
+      display: block;
+    }
+    
+    #nav-menu {
+      display: none; /* Hide the main navigation initially */
+    }
+  
+    /* Heading Adjustments */
+    .heading {
+      margin-top: -80px; 
+    }
+    
+    /* Profile Image Adjustments */
+    .photo img {
+      margin: 130px auto 0; 
+      max-height: 100vh;
+    }
+  
+    /* Content Adjustments */
+    .content {
+      margin-top: -180px; 
+    }
+  
+    /* Contact Section Adjustments */
+    #contact {
+      margin-top: -260px; 
+    }
+  }
