@@ -7,6 +7,11 @@ const hamburgerIcon = document.querySelector(".mobile-menu");
 
 // Function to toggle the mobile menu
 function toggleMenu() {
+    // Check if screen width is more than 768 pixels
+    if (window.innerWidth > 768) {
+        return; // Exit function without toggling menu
+    }
+    
     nav.classList.toggle("mobile-active");
 
     // Toggle the hamburger icon

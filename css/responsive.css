@@ -130,6 +130,10 @@ MEDIA QUERIES FOR MOBILE PHONES
     .navbar a {
         font-size: 1.1rem;
     }
+
+    .mobile-menu {
+        display: none;
+    }
   
     /* Heading & Title */
     .heading {

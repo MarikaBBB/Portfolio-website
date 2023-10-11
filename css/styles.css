@@ -111,7 +111,7 @@ MOBILE NAVIGATION STYLING
 }
 
 .mobile-menu {
-  display: block;
+  display: none;
   font-size: 2rem;
   color: var(--accent-color);
   background-color: var(--secondary-bg-color); 
