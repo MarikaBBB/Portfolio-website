@@ -14,7 +14,7 @@ const socialMediaLinks = [
         altText: "Link to Marika's Instagram profile"
     },
     {
-        url: "https://github.com/yourprofile",
+        url: "https://github.com/MarikaBBB",
         imgSrc: "./images/Icongithub2.png",
         altText: "Link to Marika's GitHub repository"
     },
