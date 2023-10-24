@@ -325,13 +325,22 @@ PROJECTS STYLING
 #projects .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  width: calc(50% - 20px);
+  max-width: 1170px;
   padding: 10px;
   box-sizing: border-box;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
+}
+
+.projectContent{
+  align-items: center;
+  min-width: 310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 20px 0 20px;
 }
 
 .picture {
@@ -351,7 +360,7 @@ PROJECTS STYLING
   text-align: center;
   padding: 20px;
   padding-top: 10px;
-  max-width: 90%; /* Restrict the width */
+  /* max-width: 90%; Restrict the width */
   margin: 0 auto; /* Center it if it's smaller than max-width */
 
 }
@@ -553,6 +562,7 @@ FOOTER STYLING
   /* border-top: 1px solid #e0e0e0;  /* border at the top of the footer */
 }
 
+
 /* Styling for the scroll button */
 .scroll-top-btn {
   background-color: var(--accent-color); 
@@ -569,4 +579,8 @@ FOOTER STYLING
   background-color: var(--secondary-bg-color);   
   color: var(--accent-color); 
   border-color: 2px solid var(--accent-color);           
+}
+
+small {
+  margin: 0 35%;
 }
