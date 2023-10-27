@@ -580,7 +580,3 @@ FOOTER STYLING
   color: var(--accent-color); 
   border-color: 2px solid var(--accent-color);           
 }
-
-small {
-  margin: 0 35%;
-}
