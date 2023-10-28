@@ -234,6 +234,12 @@ h1 {
 SPECIFIC CONTENT STYLING
 =================================================
 */
+
+a {
+  text-decoration: none;
+  color: inherit;  
+}
+
 .content h2 {
   font-size: 1.5rem;
   color: var(--text-color);
@@ -302,6 +308,38 @@ SPECIFIC CONTENT STYLING
 .shown {
   display: block;
 }
+
+/*
+=================================================
+CV STYLING
+=================================================
+*/
+
+.buttonContainer {
+  margin-top: 2.5rem;
+}
+
+.cv-button {
+  display: inline-block;  /* This will make the <a> tag behave like a button */
+  text-decoration: none;
+  background-color: transparent;
+  color: var(--accent-color);
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  border: 1px solid var(--accent-color);
+  border-radius: 5px;
+  width: 150px;
+  text-align: center;  /* This will center the text within the button */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.cv-button:hover, .cv-button:focus {
+  cursor: pointer;
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+}
+
 
 /*
 =================================================
@@ -550,7 +588,7 @@ h3#titleForm {
 FOOTER STYLING
 =================================================
 */
- footer {
+footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -558,9 +596,16 @@ FOOTER STYLING
   margin-top: 20px;
   background-color: var(--bg-color);
   border-top: 2px solid var(--bg-color); 
-  /*background-color: #f5f5f5;  light grey background for the footer */
-  /* border-top: 1px solid #e0e0e0;  /* border at the top of the footer */
 }
+
+
+/* Styling GitHub repo */
+/* .repo-center {
+  display: flex;
+  justify-content: center; 
+  width: 100%;             
+  margin: 10px 0;          
+} */
 
 
 /* Styling for the scroll button */
