@@ -3,13 +3,6 @@
  */
 const projectData = [
     {
-        image: "./images/founders and coders img.png",
-        alt: "Logo of Founders & Coders project",
-        title: "Founders & Coders",
-        codeLink: "https://github.com/MarikaBBB/website",
-        liveLink: "https://marikabbb.github.io"
-    },
-    {
         image: "./images/game.jpeg",
         alt: "Snapshot of Puzzle game interface",
         title: "Puzzle game",
@@ -17,17 +10,24 @@ const projectData = [
         liveLink: "https://marikabbb.github.io/game/index.html"
     },
     {
+        image: "./images/weather.png",
+        alt: "Interface of the Earth & Mars project",
+        title: "Earth & Mars Weather App",
+        codeLink: "https://github.com/FAC29A/Marika_Lucy_app",
+        liveLink: "https://fac29a.github.io/Marika_Lucy_app/"
+    },
+    {
+        image: "./images/ecoecho.png",
+        alt: "Image showcasing the interface of a fake agency website",
+        title: "Ecoecho website",
+        codeLink: "https://github.com/FAC29A/ecoecho",
+        liveLink: "https://fac29a.github.io/ecoecho/"
+    },
+    {
         image: "./images/codewars.png",
         alt: "Logo of Codewars platform",
         title: "Codewars",
         liveLink: "https://www.codewars.com/users/MarrrB"
-    },
-    {
-        image: "./images/color generator.png",
-        alt: "Screenshot of Colour palette generator tool",
-        title: "ColourPicker",
-        codeLink: "https://github.com/MarikaBBB/colour-palette-picker",
-        liveLink: "https://marikabbb.github.io/colour-palette-picker/"
     },
     {
         image: "./images/oneTech.png",
@@ -37,11 +37,25 @@ const projectData = [
         liveLink: "https://marikabbb.github.io/lift-portfolio/"
     },
     {
+        image: "./images/founders and coders img.png",
+        alt: "Logo of Founders & Coders project",
+        title: "Founders & Coders",
+        codeLink: "https://github.com/MarikaBBB/website",
+        liveLink: "https://marikabbb.github.io"
+    },
+    {
         image: "./images/MovieDatabase.jpeg",
         alt: "Snapshot of the Movie Database project interface",
         title: "Movie Database",
         codeLink: "https://github.com/MarikaBBB/movie-database",
         liveLink: "https://marikabbb.github.io/MovieData/index.html"
+    },
+    {
+        image: "./images/color generator.png",
+        alt: "Screenshot of Colour palette generator tool",
+        title: "ColourPicker",
+        codeLink: "https://github.com/MarikaBBB/colour-palette-picker",
+        liveLink: "https://marikabbb.github.io/colour-palette-picker/"
     },
     {
         image: "./images/python.jpg",
@@ -50,26 +64,13 @@ const projectData = [
         codeLink: "https://github.com/MarikaBBB/cfg-python-recipes-rearch-project"
     },
     {
-        image: "./images/to-do-list.png",
-        alt: "Image showcasing the interface of the To-do List project",
-        title: "To-do List",
-        codeLink: "https://github.com/MarikaBBB/lift-portfolio/tree/main/to-do-list",
-        liveLink: "https://marikabbb.github.io/lift-portfolio/to-do-list/index.html"
-    },
-    {
         image: "./images/pokemon.png",
         alt: "Design of the Pokemon encyclopedia project",
         title: "Pokédex",
-        codeLink: "https://github.com/MarikaBBB/lift-portfolio/tree/main/pokemon",
-        liveLink: "https://marikabbb.github.io/lift-portfolio/pokemon/index.html"
+        codeLink: "https://github.com/MarikaBBB/Pok-mon_search",
+        liveLink: "https://marikabbb.github.io/Pok-mon_search/"
     },
-    {
-        image: "./images/weather.png",
-        alt: "Interface of the Current weather project showing weather details",
-        title: "Current weather",
-        codeLink: "https://github.com/MarikaBBB/lift-portfolio/tree/main/weather",
-        liveLink: "https://marikabbb.github.io/lift-portfolio/weather/index.html"
-    }
+    
 ];
 
 
