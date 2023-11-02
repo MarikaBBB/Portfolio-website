@@ -39,7 +39,7 @@ const projectData = [
     {
         image: "./images/founders and coders img.png",
         alt: "Logo of Founders & Coders project",
-        title: "Founders & Coders",
+        title: "FAC application",
         codeLink: "https://github.com/MarikaBBB/website",
         liveLink: "https://marikabbb.github.io"
     },
