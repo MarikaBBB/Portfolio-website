@@ -24,6 +24,13 @@ const projectData = [
         liveLink: "https://fac29a.github.io/ecoecho/"
     },
     {
+        image: "./images/todue.png",
+        alt: "Design of the ToDue project",
+        title: "ToDue",
+        codeLink: "https://github.com/FAC29A/marika-daniel-project",
+        liveLink: "https://fac29a.github.io/marika-daniel-project/"
+    },
+    {
         image: "./images/codewars.png",
         alt: "Logo of Codewars platform",
         title: "Codewars",
