@@ -40,19 +40,22 @@ document.addEventListener("DOMContentLoaded", function() {
         link.addEventListener("click", function(e) {
             e.preventDefault();
             const linkTarget = e.currentTarget.getAttribute("data-link");
-            
+    
+            hideAllContents(); // Hide all contents initially
+    
             if (linkTarget === 'projects') {
                 mainPage.style.display = 'none';
-                hideAllContents();
                 document.getElementById(linkTarget).style.display = 'block';
+            } else if (linkTarget === 'home') {
+                mainPage.style.display = 'block';
+                document.getElementById('statement').style.display = 'block';
             } else {
                 mainPage.style.display = 'block';
-                document.getElementById('projects').style.display = 'none';
-                hideAllContents();
                 document.getElementById(linkTarget).style.display = 'block';
             }
         });
     });
+    
 
     /**
      * Set initial state on page load

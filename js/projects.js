@@ -12,7 +12,7 @@ const projectData = [
     {
         image: "./images/weather.png",
         alt: "Interface of the Earth & Mars project",
-        title: "Earth & Mars Weather App",
+        title: "Earth Meets Mars",
         codeLink: "https://github.com/FAC29A/Marika_Lucy_app",
         liveLink: "https://fac29a.github.io/Marika_Lucy_app/"
     },
