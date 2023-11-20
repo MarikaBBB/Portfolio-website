@@ -100,14 +100,6 @@ NAVIGATION STYLING
 MOBILE NAVIGATION STYLING
 =================================================
 */
-/*
-.mobile-menu {
-  font-size: 2rem;
-  display: none;
-  cursor: pointer;
-  padding: 10px;
-  color: var(--accent-color);
-} */
 
 #hamburger-btn {
   position: fixed;
@@ -382,7 +374,18 @@ PROJECTS STYLING
 }
 
 .picture {
-  border-radius: 50%;
+  border-radius: 30%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  width: 300px;
+  height: 200px;
+  object-fit: scale-down;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+/*perfect circle 
+.picture {
+  border-radius: 50px; 
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   width: 250px;
   height: 250px;
@@ -390,6 +393,8 @@ PROJECTS STYLING
   background-color: white;
   margin-bottom: 10px;
 }
+*/
+
 
 #projects .container .information {
   display: flex;
@@ -398,7 +403,6 @@ PROJECTS STYLING
   text-align: center;
   padding: 20px;
   padding-top: 10px;
-  /* max-width: 90%; Restrict the width */
   margin: 0 auto; /* Center it if it's smaller than max-width */
 
 }
@@ -597,16 +601,6 @@ footer {
   background-color: var(--bg-color);
   border-top: 2px solid var(--bg-color); 
 }
-
-
-/* Styling GitHub repo */
-/* .repo-center {
-  display: flex;
-  justify-content: center; 
-  width: 100%;             
-  margin: 10px 0;          
-} */
-
 
 /* Styling for the scroll button */
 .scroll-top-btn {
