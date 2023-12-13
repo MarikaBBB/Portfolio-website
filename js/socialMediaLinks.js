@@ -29,9 +29,9 @@ const socialMediaLinks = [
         altText: "Link to Marika's WordPress Blog"
     },
     {
-        url: "https://www.goodreads.com/user/show/30598533-marika",
-        imgSrc: "./images/Icongoodreads.png",
-        altText: "Link to Marika's Goodreads profile"
+        url: "https://discord.gg/D2eeJaRF",
+        imgSrc: "./images/Discord.png",
+        altText: "Link to Marika's Discord profile"
     }
 ];
 
