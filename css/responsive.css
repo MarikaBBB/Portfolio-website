@@ -171,6 +171,7 @@ MEDIA QUERIES FOR MOBILE PHONES
     /* Profile Photo Styling */
     .photo img {
         width: 40%;
+        height: auto;
         margin: 15px 20px 50px auto;
         margin-bottom: 50px;
         object-fit: cover;
@@ -273,6 +274,7 @@ MEDIA QUERIES FOR LARGE DESKTOP SCREENS (e.g., 24-inch monitors)
     #myName {
         align-items: center;
         margin-top: 40px; 
+        margin-left: 50px;
       }
 
     .separator {
