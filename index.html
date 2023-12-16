@@ -38,7 +38,7 @@
         <!-- === Profile Section === -->
         <section aria-label="Marika's Introduction and Skills">
     
-            <div class="mainPage" id="profileSection">
+            <div class="mainPage" "profile-container" id="profileSection">
 
                 <!-- Name and Intro Heading -->
                 <div class="heading">
@@ -157,23 +157,23 @@
             <form class="feedbackForm" id="contactForm" method="post">
                 
                 <label for="nameInput" class="visually-hidden">Your Name:</label>
-                <input type="text" name="name" id="nameInput" placeholder="Your name:" required>
-    
+                <input type="text" name="name" id="nameInput" placeholder="Your name:" required autocomplete="name">
+            
                 <label for="emailInput" class="visually-hidden">Your Email:</label>
-                <input type="email" name="email" id="emailInput" placeholder="Your email:" required>
-    
+                <input type="email" name="email" id="emailInput" placeholder="Your email:" required autocomplete="email">
+            
                 <label for="subjectInput" class="visually-hidden">Subject:</label>
-                <input type="text" name="subject" id="subjectInput" placeholder="Subject" required>
-    
+                <input type="text" name="subject" id="subjectInput" placeholder="Subject" required autocomplete="off">
+            
                 <label for="messageTextArea" class="visually-hidden">Your Message:</label>
-                <textarea name="message" id="messageTextArea" placeholder="Your message" required></textarea>
-    
+                <textarea name="message" id="messageTextArea" placeholder="Your message" required autocomplete="off"></textarea>
+            
                 <div class="buttonContainer">
                     <input type="submit" value="Submit">
                 </div>
-    
+            
                 <p id="thankyouMessage" class="message">Thank you! I'll be in touch.</p>
-            </form>
+            </form>            
         </section>
     
         <!-- === Projects Section === -->

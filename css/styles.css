@@ -177,6 +177,7 @@ CONTENT STYLES
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-bottom: 2rem;
 }
 
 h1, h2, #socialMedia {
@@ -621,3 +622,5 @@ footer {
   color: var(--accent-color); 
   border-color: 2px solid var(--accent-color);           
 }
+
+
