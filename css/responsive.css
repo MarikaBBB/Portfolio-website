@@ -133,7 +133,7 @@ MEDIA QUERIES FOR MOBILE PHONES
   MEDIA QUERIES FOR TABLETS (INCLUDING IPAD)
   =================================================
   */
-  @media only screen and (min-width: 769px) and (max-width: 1180px) {
+  @media only screen and (min-width: 769px) and (max-width: 1440px) {
       
     /* Navbar */
     .navbar li {
@@ -251,10 +251,10 @@ MEDIA QUERIES FOR MOBILE PHONES
   }
   /*
 =================================================
-MEDIA QUERIES FOR LARGE DESKTOP SCREENS (e.g., 24-inch monitors)
+MEDIA QUERIES FOR LARGE DESKTOP SCREENS
 =================================================
 */
-@media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 1680px) {
 
     body {
         margin-left: 10px;
