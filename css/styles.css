@@ -198,7 +198,7 @@ h1 {
 .section {
   padding: 60px;
   position: relative;
-  margin-top: 220px;
+  margin-top: 320px;
 }
 
 .content {
@@ -210,9 +210,11 @@ h1 {
 .photo img {
   float: right;
   transform: rotate(-5deg);
+  max-width: 100%;
   max-height: calc(100vh - 220px);
   margin-right: 20px;
   margin-top: -40px;
+  object-fit: cover;
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
   box-shadow: 
       inset 10px 10px 70px rgba(255, 226, 201, 0.8),
