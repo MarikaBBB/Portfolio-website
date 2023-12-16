@@ -155,7 +155,7 @@ MEDIA QUERIES FOR MOBILE PHONES
     }
 
     #myName {
-        margin-top: 10px; 
+        margin-top: 10px;
       }
   
     h1 {
@@ -254,6 +254,11 @@ MEDIA QUERIES FOR LARGE DESKTOP SCREENS (e.g., 24-inch monitors)
 =================================================
 */
 @media only screen and (min-width: 1920px) {
+
+    body {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 
     .heading {
         position: relative;
