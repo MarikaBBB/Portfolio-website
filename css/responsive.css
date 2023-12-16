@@ -261,6 +261,7 @@ MEDIA QUERIES FOR LARGE DESKTOP SCREENS (e.g., 24-inch monitors)
         top: 10vh;
         left: 0;
         right: 0;
+        margin-left: 20px;
         text-align: center;
         font-size: 3.5rem; /* Increase font size for better visibility */
     }
@@ -277,7 +278,7 @@ MEDIA QUERIES FOR LARGE DESKTOP SCREENS (e.g., 24-inch monitors)
     .photo img {
         width: 45%; 
         height: auto;
-        margin: 30px auto;
+        margin: 30px 20px;
         object-fit: cover;
     }
 
