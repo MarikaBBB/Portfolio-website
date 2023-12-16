@@ -180,18 +180,22 @@ CONTENT STYLES
   margin-bottom: 2rem;
 }
 
+#myName {
+  margin-top: 40px; 
+  /* padding: 10px;  */
+}
+
 h1, h2, #socialMedia {
   font-family: var(--alt-font)
 }
 
 h1 {
   font-size: 2.8rem;
-  margin: 0;
 }
 
 .separator {
   width: 100%;
-  margin: 10px 0;
+  margin: 8px 0;
   border: none;
   border-top: 2px solid #333333;
 }
@@ -214,7 +218,7 @@ h1 {
   max-width: 100%;
   max-height: calc(100vh - 220px);
   margin-right: 20px;
-  margin-top: -40px;
+  margin-top: -80px;
   object-fit: cover;
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
   box-shadow: 
