@@ -1,83 +1,128 @@
-/* =================================================
-   GLOBAL STYLES (Applied to all screen sizes)
-================================================= */
-html, body {
-    /* Existing global styles */
+/*
+=================================================
+MEDIA QUERIES FOR MOBILE PHONES
+=================================================
+*/
+@media only screen and (max-width: 768px) {
+    .mobile-menu {
+        display: block;
+    }
+  
+    #nav-menu {
+        display: none;
+    }
+  
+    /* Navbar */
+    .navbar li {
+        margin: 5px;
+    }
+  
+    .navbar a {
+        font-size: 0.9rem;
+    }
+  
+    /* Heading & Title */
+    .heading {
+        margin-top: -120px;
+        margin-bottom: 10px;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+  
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+  
+    .separator {
+        width: 80%;  
+        margin: 0 auto;
+    }
+
+    .profile-container {
+        flex-direction: column; /* Stack the items vertically */
+        align-items: center; 
+    }
+  
+    /* Profile Photo Styling */
+    .photo img {
+        flex-basis: 80%;
+        width: 80%; 
+        height: 80%;
+        margin: 170px auto 0 auto;
+        display: block;
+        float: none;
+        margin-right: 10px;
+        object-fit: cover;
+    }
+  
+    /* Specific content styles */
+    #about {
+        margin-right: 0;
+    }
+  
+    #skills img.logo {
+        width: 60px; 
+        height: 60px; 
+    }
+  
+    .content {
+        padding-left: 10px; 
+        padding-right: 10px;
+        margin-top: -240px;
+    }
+  
+    #skills {
+        margin-right: 0;
+        margin-left: 10px;
+    }
+  
+    /* Projects styling */
+    #projects {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    #projects .container {
+        width: 80%;
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+  
+    #projects .container .information {
+        max-width: 100%;
+    }
+  
+    #projects .container .onTheWeb {
+        margin-bottom: 60px;
+    }
+  
+  
+    /* Contact section styling */
+    #contact {
+      margin-top: -320px;
+     
+    }
+  
+    input, textarea {
+        width: 80%;
+    }
+  
+    /* Icons styling */
+    #followTitle {
+        margin-left: 0;
+    }
+  
+    h3#titleForm {
+        margin-left: 0;
+    }
+  
+    .socialIcons {
+        justify-content: center;
+        width: 60%;
+    }
   }
   
-  /* ... [other global styles] ... */
-  
-  /*
-  =================================================
-  MEDIA QUERIES FOR MOBILE PHONES
-  =================================================
-  */
-  @media only screen and (max-width: 768px) {
-      .mobile-menu {
-          display: block;
-      }
-    
-      #nav-menu {
-          display: none;
-      }
-  
-      .navbar li {
-          margin: 5px;
-      }
-    
-      .navbar a {
-          font-size: 0.9rem;
-      }
-  
-      .heading {
-          position: relative;
-          top: 10vh;
-          left: 0;
-          right: 0;
-          text-align: center;
-      }
-    
-      h1 {
-          font-size: 2rem;
-      }
-  
-      .separator {
-          width: 80%;
-          margin: 10px auto;
-      }
-  
-      .photo img {
-          width: 80%;
-          height: auto;
-          margin: 20px auto;
-          display: block;
-          object-fit: cover;
-      }
-  
-      .content {
-          padding: 10px;
-          margin-top: 20px;
-      }
-  
-      #projects .container {
-          width: 100%;
-          padding: 10px;
-      }
-  
-      #contact {
-          padding: 10px;
-      }
-  
-      input, textarea {
-          width: 100%;
-          box-sizing: border-box;
-      }
-  
-      .socialIcons {
-          justify-content: center;
-          width: 100%;
-      }
-  }
   
   /*
   =================================================
@@ -85,103 +130,156 @@ html, body {
   =================================================
   */
   @media only screen and (min-width: 769px) and (max-width: 1180px) {
-      .navbar li {
-          margin: 10px;
-      }
+      
+    /* Navbar */
+    .navbar li {
+        margin: 10px;
+    }
+  
+    .navbar a {
+        font-size: 1.1rem;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+  
+    /* Heading & Title */
+    .heading {
+        margin-top: -150px;
+        /* margin-bottom: 45px; */
+        margin-bottom: 0.5rem;
+    }
+  
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+  
+    .separator {
+        width: 85%;
+        margin: 0 auto;
+    }
+  
+    /* Profile Photo Styling */
+    .photo img {
+        width: 40%;
+        margin: 15px 20px 50px auto;
+        margin-bottom: 50px;
+        object-fit: cover;
+    }
+  
+    /* Specific content styles */
+    .section {
+      text-align: left;
+    }
+  
+    #about {
+        margin-right: 10px;
+    }
+  
+    #skills img.logo {
+        width: 70px;
+        height: 70px;
+    }
+  
+    .content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+  
+    #skills {
+        margin-right: 10px;
+        margin-left: 20px;
+    }
+  
+    /* Projects styling */
+    #projects {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    #projects .container {
+        width: 85%;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+  
+    #projects .container .information {
+        max-width: 90%;
+    }
+  
+    #projects .container .onTheWeb {
+        margin-bottom: 50px;
+    }
+  
+    /* Contact section styling */
+    input, textarea {
+        width: 85%;
+    }
+  
+    /* Icons styling */
+    #followTitle {
+        margin-left: 10px;
+    } 
+  
+    h3#titleForm {
+        margin-left: 10px;
+    }
+  
+    .socialIcons {
+        justify-content: center;
+        width: 65%;
+    }
+  
     
-      .navbar a {
-          font-size: 1.1rem;
-      }
-  
-      .mobile-menu {
-          display: none;
-      }
-  
-      .heading {
-          position: relative;
-          top: 10vh;
-          left: 0;
-          right: 0;
-          text-align: center;
-      }
-    
-      h1 {
-          font-size: 2.5rem;
-      }
-  
-      .separator {
-          width: 85%;
-          margin: 10px auto;
-      }
-  
-      .photo img {
-          width: 50%;
-          height: auto;
-          margin: 20px auto;
-          object-fit: cover;
-      }
-  
-      .content {
-          padding: 20px;
-      }
-  
-      #projects .container {
-          width: 100%;
-          padding: 20px;
-      }
-  
-      #contact {
-          padding: 20px;
-      }
-  
-      .socialIcons {
-          justify-content: center;
-          width: 100%;
-      }
+    .centeredContent {
+      display: flex;
+      flex-direction: column;
+      align-items: center;  /*Horizontally centers the content */
+      width: 50%; /*full width of its parent container */
+      text-align: center; /*Centers text within child elements */
+  } 
   }
-  
   /*
-  =================================================
-  MEDIA QUERIES FOR DESKTOPS AND LARGE SCREENS
-  =================================================
-  */
-  @media only screen and (min-width: 1181px) {
-      .heading {
-          position: relative;
-          top: 5vh;
-          left: 0;
-          right: 0;
-          text-align: center;
-      }
-  
-      h1 {
-          font-size: 3rem;
-      }
-  
-      .separator {
-          width: 60%;
-          margin: 10px auto;
-      }
-  
-      .section {
-          padding: 80px;
-      }
-  
-      .photo img {
-          width: 40%;
-          height: auto;
-          margin: 20px auto;
-          object-fit: cover;
-      }
-  
-      #projects .container {
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          gap: 20px;
-      }
-  
-      #contact {
-          padding: 20px;
-      }
-  }
-    
+=================================================
+MEDIA QUERIES FOR LARGE DESKTOP SCREENS (e.g., 24-inch monitors)
+=================================================
+*/
+@media only screen and (min-width: 1920px) {
+
+    .heading {
+        position: relative;
+        top: 10vh;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: 3.5rem; /* Increase font size for better visibility */
+    }
+
+    .separator {
+        width: 70%;
+        margin: 15px auto;
+    }
+
+    .section {
+        padding: 100px; /* Increase padding for a more spacious layout */
+    }
+
+    .photo img {
+        width: 45%; 
+        height: auto;
+        margin: 30px auto;
+        object-fit: cover;
+    }
+
+    #projects .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 4-column layout */
+        gap: 30px; 
+    }
+
+    #contact {
+        padding: 30px; 
+    }
+}
