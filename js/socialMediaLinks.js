@@ -4,6 +4,21 @@
 // Array of social media data
 const socialMediaLinks = [
     {
+        url: "https://github.com/MarikaBBB",
+        imgSrc: "./images/Icongithub2.png",
+        altText: "Link to Marika's GitHub repository"
+    },
+    {
+        url: "https://discord.gg/D2eeJaRF",
+        imgSrc: "./images/Discord.png",
+        altText: "Link to Marika's Discord profile"
+    },
+    {
+        url: "https://www.codewars.com/users/MarrrB",
+        imgSrc: "./images/IconWars.png",
+        altText: "Link to Marika's Codewars profile"
+    },
+    {
         url: "https://www.linkedin.com/in/marika-bert/",
         imgSrc: "./images/Iconlinkedin.png",
         altText: "Link to Marika's LinkedIn profile"
@@ -14,24 +29,9 @@ const socialMediaLinks = [
         altText: "Link to Marika's Instagram profile"
     },
     {
-        url: "https://github.com/MarikaBBB",
-        imgSrc: "./images/Icongithub2.png",
-        altText: "Link to Marika's GitHub repository"
-    },
-    {
-        url: "https://www.codewars.com/users/MarrrB",
-        imgSrc: "./images/IconWars.png",
-        altText: "Link to Marika's Codewars profile"
-    },
-    {
         url: "https://wanderthroughculture.wordpress.com",
         imgSrc: "./images/Iconwordpress.png",
         altText: "Link to Marika's WordPress Blog"
-    },
-    {
-        url: "https://discord.gg/D2eeJaRF",
-        imgSrc: "./images/Discord.png",
-        altText: "Link to Marika's Discord profile"
     }
 ];
 
