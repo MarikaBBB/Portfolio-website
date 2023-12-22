@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
         { src: './images/git.png', alt: 'Git logo', name:'GIT'},
         { src: './images/code.png', alt: 'GitHub logo', name:'GITHUB'},
         { src: './images/responsive.png', alt: 'Mobile responsive design icon', name:'MOBILE'},
+        { src: './images/nodejs.png', alt: 'Nodejs icon', name:'Node.Js'},
     ];    
 
     // Get the UL element from the DOM to append skills

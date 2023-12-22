@@ -285,7 +285,7 @@ a {
 }
 
 #skills img.logo {
-  width: 80px;
+  max-width: 80px;
   height: 80px;
   margin-right: 10px;
 }
