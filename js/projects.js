@@ -3,6 +3,12 @@
  */
 const projectData = [
     {
+        image: "./images/DiscordBot.png",
+        alt: "Snapshot of discord bot",
+        title: "MPZ Discord Bot",
+        codeLink: "https://github.com/FAC29A/MPZ-bot"
+    },
+    {
         image: "./images/game.jpeg",
         alt: "Snapshot of Puzzle game interface",
         title: "Puzzle game",
