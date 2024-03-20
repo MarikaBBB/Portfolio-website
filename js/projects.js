@@ -50,13 +50,13 @@ const projectData = [
         codeLink: "https://github.com/MarikaBBB/website",
         liveLink: "https://marikabbb.github.io"
     },
-    {
-        image: "./images/MovieDatabase.jpeg",
-        alt: "Snapshot of the Movie Database project interface",
-        title: "Movie Database",
-        codeLink: "https://github.com/MarikaBBB/movie-database",
-        liveLink: "https://marikabbb.github.io/MovieData/index.html"
-    },
+    // {
+    //     image: "./images/MovieDatabase.jpeg",
+    //     alt: "Snapshot of the Movie Database project interface",
+    //     title: "Movie Database",
+    //     codeLink: "https://github.com/MarikaBBB/movie-database",
+    //     liveLink: "https://marikabbb.github.io/MovieData/index.html"
+    // },
     {
         image: "./images/color generator.png",
         alt: "Screenshot of Colour palette generator tool",
