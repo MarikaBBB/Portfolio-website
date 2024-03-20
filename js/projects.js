@@ -37,12 +37,6 @@ const projectData = [
         liveLink: "https://fac29a.github.io/marika-daniel-project/"
     },
     {
-        image: "./images/codewars.png",
-        alt: "Logo of Codewars platform",
-        title: "Codewars",
-        liveLink: "https://www.codewars.com/users/MarrrB"
-    },
-    {
         image: "./images/oneTech.png",
         alt: "Screenshot of the Intro to coding course project named oneTech",
         title: "Intro to coding",
@@ -75,15 +69,7 @@ const projectData = [
         alt: "Python logo representing the Intro to Python project with CFG",
         title: "Intro to Python",
         codeLink: "https://github.com/MarikaBBB/cfg-python-recipes-rearch-project"
-    },
-    {
-        image: "./images/pokemon.png",
-        alt: "Design of the Pokemon encyclopedia project",
-        title: "Pokédex",
-        codeLink: "https://github.com/MarikaBBB/Pok-mon_search",
-        liveLink: "https://marikabbb.github.io/Pok-mon_search/"
-    },
-    
+    },    
 ];
 
 
