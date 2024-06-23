@@ -24,11 +24,6 @@ const socialMediaLinks = [
         altText: "Link to Marika's LinkedIn profile"
     },
     {
-        url: "https://www.instagram.com/marikabert/",
-        imgSrc: "./images/Iconinstagram.png",
-        altText: "Link to Marika's Instagram profile"
-    },
-    {
         url: "https://wanderthroughculture.wordpress.com",
         imgSrc: "./images/Iconwordpress.png",
         altText: "Link to Marika's WordPress Blog"
