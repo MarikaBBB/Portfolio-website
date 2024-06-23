@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", function() {
         { src: './images/code.png', alt: 'GitHub logo', name:'GITHUB'},
         { src: './images/responsive.png', alt: 'Mobile responsive design icon', name:'MOBILE'},
         { src: './images/nodejs.png', alt: 'Nodejs icon', name:'Node.Js'},
-        { src: './images/python-logo-only.png', alt: 'SQL logo', name: 'SQL' },
-        { src: './images/icons8-mysql-logo-48.png', alt: 'Python logo', name: 'Python' }
+        { src: './images/icons8-mysql-logo-48.png', alt: 'SQL logo', name: 'SQL' },
+        { src: './images/python-logo-only.png', alt: 'Python logo', name: 'Python' }
     ];    
 
     // Get the UL element from the DOM to append skills
